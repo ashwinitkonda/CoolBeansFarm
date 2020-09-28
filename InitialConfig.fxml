@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerInitialConfig">
+      <children>
+         <TextField fx:id="nameField" layoutX="306.0" layoutY="106.0" />
+         <Label layoutX="142.0" layoutY="14.0" text="SET UP YOUR GAME">
+            <font>
+               <Font name="System Bold Italic" size="35.0" />
+            </font>
+            <textFill>
+               <RadialGradient centerX="0.5155555725097656" centerY="0.5" radius="1.0">
+                  <stops>
+                     <Stop>
+                        <color>
+                           <Color red="0.7657894492149353" green="0.09926900267601013" blue="0.09926900267601013" />
+                        </color>
+                     </Stop>
+                     <Stop offset="1.0">
+                        <color>
+                           <Color red="1.0" green="1.0" blue="1.0" />
+                        </color>
+                     </Stop>
+                  </stops>
+               </RadialGradient>
+            </textFill>
+         </Label>
+         <Label layoutX="203.0" layoutY="60.0" text="Are you ready to play?" textAlignment="CENTER" textFill="#fdfafa">
+            <font>
+               <Font name="Trebuchet MS Italic" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="169.0" layoutY="106.0" text="ENTER NAME:" textAlignment="CENTER" textFill="#d3c8c8">
+            <font>
+               <Font name="Trebuchet MS Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="104.0" layoutY="141.0" text="SELECT DIFFICULTY:" textAlignment="CENTER" textFill="#d3c8c8">
+            <font>
+               <Font name="Trebuchet MS Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="141.0" layoutY="178.0" text="SELECT SEASON:" textAlignment="CENTER" textFill="#d3c8c8">
+            <font>
+               <Font name="Trebuchet MS Bold" size="20.0" />
+            </font>
+         </Label>
+         <Label layoutX="113.0" layoutY="215.0" text="SELECT SEED TYPE:" textAlignment="CENTER" textFill="#d3c8c8">
+            <font>
+               <Font name="Trebuchet MS Bold" size="20.0" />
+            </font>
+         </Label>
+         <Button fx:id="nextButton" layoutX="510.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleNextButtonAction" text="NEXT" textFill="#aa3939">
+            <font>
+               <Font name="Berlin Sans FB" size="20.0" />
+            </font>
+         </Button>
+         <Button fx:id="easy" layoutX="304.0" layoutY="141.0" mnemonicParsing="false" onAction="#easyButtonAction" text="EASY">
+            <font>
+               <Font name="Trebuchet MS" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="medium" layoutX="358.0" layoutY="141.0" mnemonicParsing="false" onAction="#medButtonAction" text="MED">
+            <font>
+               <Font name="Trebuchet MS" size="12.0" />
+            </font>
+         </Button>
+         <Button fx:id="hard" layoutX="405.0" layoutY="141.0" mnemonicParsing="false" onAction="#hardButtonAction" text="HARD">
+            <font>
+               <Font name="Trebuchet MS" size="12.0" />
+            </font>
+         </Button>
+         <ComboBox fx:id="seasonBox" layoutX="305.0" layoutY="178.0" prefWidth="150.0" promptText="Season Drop-Down" />
+         <ComboBox fx:id="seedTypeBox" layoutX="305.0" layoutY="215.0" prefWidth="150.0" promptText="Seed Drop-Down" />
+      </children>
+</AnchorPane>

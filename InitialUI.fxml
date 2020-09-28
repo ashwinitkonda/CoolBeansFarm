@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="bodybg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerInitialUI">
+   <children>
+      <Label layoutX="59.0" layoutY="75.0" text="Season:" textFill="#f4eeee">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="30.0" />
+         </font></Label>
+      <Label layoutX="99.0" layoutY="111.0" text="Day:" textFill="#f4eeee">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="152.0" text="Gold:" textFill="#f4eeee">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="seasonInput" layoutX="183.0" layoutY="75.0" text="Spring" textFill="#bee3ed">
+         <font>
+            <Font name="Trebuchet MS" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="dayVal" layoutX="183.0" layoutY="111.0" text="Day 1" textFill="#bee3ed">
+         <font>
+            <Font name="Trebuchet MS" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="gold" layoutX="183.0" layoutY="152.0" text="200" textFill="#bee3ed">
+         <font>
+            <Font name="Trebuchet MS" size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="29.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GAME STATUS:">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="40.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.9697674152462982">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8815789222717285" green="0.28243178129196167" blue="0.28243178129196167" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Button fx:id="goBack" layoutX="23.0" layoutY="339.0" mnemonicParsing="false" onAction="#handleBackButtonAction" text="Back" textFill="#dd3333">
+         <font>
+            <Font name="Trebuchet MS Bold Italic" size="20.0" />
+         </font></Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="200.0" layoutX="371.0" layoutY="20.0" stroke="#f8f7f7" strokeType="INSIDE" width="201.0" />
+      <Circle fill="#e2aba4" layoutX="403.0" layoutY="52.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Text fill="#fdfbfb" layoutX="479.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Plot Tracker">
+         <font>
+            <Font name="Trebuchet MS Bold" size="16.0" />
+         </font>
+      </Text>
+      <Circle fill="#e2aba4" layoutX="449.0" layoutY="52.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="495.0" layoutY="52.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="541.0" layoutY="52.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="403.0" layoutY="98.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="449.0" layoutY="98.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="495.0" layoutY="98.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="541.0" layoutY="98.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="403.0" layoutY="144.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="449.0" layoutY="144.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="495.0" layoutY="144.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="541.0" layoutY="144.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="403.0" layoutY="188.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="449.0" layoutY="188.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="495.0" layoutY="188.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+      <Circle fill="#e2aba4" layoutX="541.0" layoutY="188.0" radius="23.0" stroke="#f5f1f1" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
